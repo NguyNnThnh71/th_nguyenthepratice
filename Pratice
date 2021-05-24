@@ -1,0 +1,109 @@
+//
+//  main.swift
+//  pratice
+//
+//  Created by Apple on 22/05/2021.
+//
+
+import Foundation
+//3
+let array = ["H", "e","l","l"," o"]
+    for item in array.reversed() {
+    print("\(item)")
+    }
+//1
+func checkMonth (Month: Int) {
+        switch Month {
+        case 1:
+            print (" Tháng có 31 ngày")
+        case 3:
+            print (" Tháng có 31 ngày")
+        case 5:
+            print (" Tháng có 31 ngày")
+        case 7:
+            print (" Tháng có 31 ngày")
+        case 8:
+            print (" Tháng có 31 ngày")
+        case 10:
+            print (" Tháng có 31 ngày")
+        case 12:
+            print (" Tháng có 31 ngày")
+            break
+        case 4:
+            print(" Tháng có 30 ngày")
+        case 6:
+            print(" Tháng có 30 ngày")
+        case 9:
+            print(" Tháng có 30 ngày")
+        case 11:
+            print (" Tháng có 30 ngày")
+            break
+        case 2:
+            print (" Nếu năm nhuận thì đó thì có 29 ngày")
+            print (" Nếu khong phải năm nhuận thì có 28 ngày")
+        default:
+            print (" Bạn đã nhập lụi rồi")
+        }
+}
+print(checkMonth(Month: 2))
+
+
+// 3
+let theFilm : String = (" Tom and Jerry")
+let theCountinous : String = ("...")
+let theFinal = theFilm + theCountinous
+print (theFinal)
+
+// 4
+let numbers = [1, 2, 3, 4, 5]
+numbers.min()
+numbers.max()
+print (numbers.max())
+print (numbers.min())
+
+
+
+// 7
+let soHang = 3
+
+for i in 0..<soHang
+{
+    var empty = ""
+
+    for a in 0..<(soHang + 1)
+    {
+        let x = soHang - i
+
+        if (a > x) {
+            empty = empty + "*"
+        } else {
+            empty = empty + " "
+        }
+    }
+    
+    for h in 0..<(i+1)
+    {
+        empty = empty + "*"
+    }
+    
+    print(empty)
+}
+
+// 5
+var numbersArray = [1,10,100]
+    numbersArray.max()
+    numbersArray.removeLast()
+    print (numbersArray.max())
+
+//2
+
+func sumInt(a: UInt) {
+    var sum = 0
+    for i in "\(a)" {
+        let number = (String(i) as NSString).integerValue
+        sum += number
+    }
+    print(sum)
+}
+sumInt(a:123)
+
